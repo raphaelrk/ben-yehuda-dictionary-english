@@ -1,19 +1,20 @@
-# Ben-Yehuda's Hebrew dictionary in English (selected entries, א–ל)
+# Ben-Yehuda's Hebrew dictionary in English (volumes 1–5, א–ל)
 
-3,292 entries from volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of Ancient and
-Modern Hebrew* (מילון הלשון העברית הישנה והחדשה), each with its Hebrew text and an English
-translation.
+<!-- coverage:start -->
+3,292 of the 9,560 entries in volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of
+Ancient and Modern Hebrew* (מילון הלשון העברית הישנה והחדשה), each with its Hebrew text and an
+English translation.
 
-**This is a partial release.** Volumes 1–5 have 9,559 entries in the digitized text; these are
-the 3,292 that match words or roots in a prayer book (about a third of the entries and, by our
-estimate, roughly 70% of the text). Volumes 6–16 (מ–ת, 12,688 entries) are not included.
+**This is a partial release:** 34% of the entries and 63% of the text of volumes 1–5 so far.
+Volumes 6–16 (מ–ת, 12,688 entries) are not included.
+<!-- coverage:end -->
 
 **This is an AI translation and no human expert has reviewed it.** Check the Hebrew before
 relying on it, and see [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
 ## The data
 
-`data/entries.jsonl` has one JSON object per line (UTF-8, about 24 MB):
+`data/entries.jsonl` has one JSON object per line (UTF-8, about 24 MB and growing):
 
 | Field | Meaning |
 |---|---|
@@ -63,14 +64,14 @@ be protected. Volumes 6 and 7 were largely Ben-Yehuda's own and may well be free
 drew the line where the case is clearest. This is our reading, not legal advice. Volume
 history: [Hebrew Wikipedia](https://he.wikipedia.org/wiki/מילון_בן-יהודה).
 
-## Why only these entries
+## What has been translated so far
 
-The translations were made for an interlinear Hebrew prayer book, so the selection is the
-entries that matched a word or root in it. It is not everything in volumes 1–5.
+The translations began for an interlinear Hebrew prayer book, so the entries that match a word or
+root in it were done first. The rest of volumes 1–5 is being added.
 
 ## How the English was made
 
-Anthropic's Claude translated the entries on 22–24 November 2026, in batches shared among many
+Anthropic's Claude translated the entries from 22 November 2026, in batches shared among many
 parallel AI workers following the same written rules:
 
 - Translate each entry in full: every sense, quotation and source reference, in the printed
@@ -106,7 +107,7 @@ text is in the public domain, as explained above; CC0 here makes no claim over i
 As a courtesy, not a condition, please cite it, and say that the English is an unreviewed AI
 translation:
 
-> *Ben-Yehuda's Hebrew Dictionary in English (selected entries, א–ל)*. AI translation, 2026.
+> *Ben-Yehuda's Hebrew Dictionary in English (volumes 1–5, א–ל)*. AI translation, 2026.
 > https://github.com/raphaelrk/ben-yehuda-dictionary-english. Hebrew: Eliezer Ben-Yehuda,
 > *A Complete Dictionary of Ancient and Modern Hebrew*, vols. 1–5; digitized by Project
 > Ben-Yehuda, via Sefaria.

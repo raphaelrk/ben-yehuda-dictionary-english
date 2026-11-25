@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "Citation is requested as a courtesy; it is not a condition of use."
 type: dataset
-title: "Ben-Yehuda's Hebrew Dictionary in English (selected entries, א–ל)"
-abstract: "3,292 entries from volumes 1–5 of Eliezer Ben-Yehuda's Hebrew dictionary with an unreviewed AI translation into English."
+title: "Ben-Yehuda's Hebrew Dictionary in English (volumes 1–5, א–ל)"
+abstract: "Entries from volumes 1–5 of Eliezer Ben-Yehuda's Hebrew dictionary with an unreviewed AI translation into English."
 authors:
   - name: "ben-yehuda-dictionary-english contributors"
 date-released: "2026-11-24"

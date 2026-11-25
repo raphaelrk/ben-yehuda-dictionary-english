@@ -1,11 +1,11 @@
 # Ben-Yehuda's Hebrew dictionary in English (volumes 1–5, א–ל)
 
 <!-- coverage:start -->
-5,618 of the 9,560 entries in volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of
+6,127 of the 9,560 entries in volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of
 Ancient and Modern Hebrew* (מילון הלשון העברית הישנה והחדשה), each with its Hebrew text and an
 English translation.
 
-**This is a partial release:** 59% of the entries and 76% of the text of volumes 1–5 so far.
+**This is a partial release:** 64% of the entries and 79% of the text of volumes 1–5 so far.
 Volumes 6–16 (מ–ת, 12,688 entries) are not included.
 <!-- coverage:end -->
 
@@ -14,7 +14,7 @@ relying on it, and see [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
 ## The data
 
-`data/entries.jsonl` has one JSON object per line (UTF-8, about 29 MB and growing):
+`data/entries.jsonl` has one JSON object per line (UTF-8, about 30 MB and growing):
 
 | Field | Meaning |
 |---|---|

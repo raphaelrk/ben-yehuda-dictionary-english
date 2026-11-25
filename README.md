@@ -4,6 +4,10 @@
 Modern Hebrew* (מילון הלשון העברית הישנה והחדשה), each with its Hebrew text and an English
 translation.
 
+**This is a partial release.** Volumes 1–5 have 9,559 entries in the digitized text; these are
+the 3,292 that match words or roots in a prayer book (about a third of the entries and, by our
+estimate, roughly 70% of the text). Volumes 6–16 (מ–ת, 12,688 entries) are not included.
+
 **This is an AI translation and no human expert has reviewed it.** Check the Hebrew before
 relying on it, and see [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
@@ -69,7 +73,8 @@ entries that matched a word or root in it. It is not everything in volumes 1–5
 Anthropic's Claude translated the entries on 22–24 November 2026, in batches shared among many
 parallel AI workers following the same written rules:
 
-- Translate everything: every sense, quotation and source reference, in the printed order.
+- Translate each entry in full: every sense, quotation and source reference, in the printed
+  order.
 - Keep the dictionary's own German, French and English glosses.
 - Expand source abbreviations (ברכ' → Berakhot) only when confident; otherwise leave them in
   Hebrew.

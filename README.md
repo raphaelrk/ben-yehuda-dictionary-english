@@ -1,12 +1,11 @@
 # Ben-Yehuda's Hebrew dictionary in English (volumes 1–5, א–ל)
 
 <!-- coverage:start -->
-8,804 of the 9,560 entries in volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of
+All 9,560 entries in volumes 1–5 of Eliezer Ben-Yehuda's *A Complete Dictionary of
 Ancient and Modern Hebrew* (מילון הלשון העברית הישנה והחדשה), each with its Hebrew text and an
 English translation.
 
-**This is a partial release:** 92% of the entries and 95% of the text of volumes 1–5 so far.
-Volumes 6–16 (מ–ת, 12,688 entries) are not included.
+**All of volumes 1–5 is translated.** Volumes 6–16 (מ–ת, 12,688 entries) are not included.
 <!-- coverage:end -->
 
 **This is an AI translation and no human expert has reviewed it.** Check the Hebrew before
@@ -14,7 +13,7 @@ relying on it, and see [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
 ## The data
 
-`data/entries.jsonl` has one JSON object per line (UTF-8, about 36 MB and growing):
+`data/entries.jsonl` has one JSON object per line (UTF-8, about 38 MB):
 
 | Field | Meaning |
 |---|---|
@@ -45,9 +44,10 @@ Project Ben-Yehuda notes about misprints in the original.
 Scans of the printed volumes are at the National Library of Israel (linked from
 [Hebrew Wikipedia](https://he.wikipedia.org/wiki/מילון_בן-יהודה)) and the
 [Internet Archive](https://archive.org/details/a-complete-dictionary-of-ancient-and-modern-hebrew-eliezer-ben-yehuda-images).
-We did not compare the digital text with the scans. In at least six entries (דָּגָה I, זוֹל,
-חָלַץ II, חֹשֶׁךְ, יָעַד, כְּבֵדֻת) the source appears to repeat one reference in place of many
-different ones; the English follows the source.
+We did not compare the digital text with the scans. In a number of
+entries (for example חֹשֶׁךְ, יָעַד, וֶשֶׁט, חִפּוּשׂ and לָעַס) the source appears to repeat one reference in
+place of many different ones; the English follows the source. [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
+lists the ones we noticed.
 
 ## Why only volumes 1–5
 
@@ -64,14 +64,16 @@ be protected. Volumes 6 and 7 were largely Ben-Yehuda's own and may well be free
 drew the line where the case is clearest. This is our reading, not legal advice. Volume
 history: [Hebrew Wikipedia](https://he.wikipedia.org/wiki/מילון_בן-יהודה).
 
-## What has been translated so far
+## How it was selected
 
-The translations began for an interlinear Hebrew prayer book, so the entries that match a word or
-root in it were done first. The rest of volumes 1–5 is being added.
+All entries of volumes 1–5 in the digitized text are here. The work began for an interlinear Hebrew
+prayer book, so the 3,292 entries that match a word or root in it were translated first (22–24
+November 2026) and the other 6,268 after that (24–25 November). The `translated` field has each
+entry's date.
 
 ## How the English was made
 
-Anthropic's Claude translated the entries from 22 November 2026, in batches shared among many
+Anthropic's Claude translated the entries on 22–25 November 2026, in batches shared among many
 parallel AI workers following the same written rules:
 
 - Translate each entry in full: every sense, quotation and source reference, in the printed
@@ -84,14 +86,15 @@ parallel AI workers following the same written rules:
 - Keep Hebrew forms that the entry is discussing, and lists of related words, in Hebrew.
 - Add no explanations, etymologies or interpretations.
 
-A script checked that each entry had one English paragraph per Hebrew paragraph and that no
-paragraph was suspiciously short or long. We also searched for placeholder text, dropped
-references and leftover Hebrew, and repaired what we found. These checks catch missing text,
-not wrong translations.
+Scripts checked that each entry had one English paragraph per Hebrew paragraph, that no
+paragraph was suspiciously short or long, that Hebrew and Arabic words kept in the English occur
+in the source, and that references and foreign glosses were not dropped; we repaired what we
+found. These checks catch missing or miscopied text, not wrong translations.
 
 The rules were tightened as work went on, so the result is not uniform. Expect:
 
-- Abbreviations expanded wrongly or inconsistently, and some left unexpanded.
+- Abbreviations expanded wrongly or inconsistently (סהמ"א, for example, is "medieval literature",
+  "the later literature" or left in Hebrew), and some left unexpanded.
 - Some misprinted references silently corrected in early batches; most are kept as printed.
 - Occasional added glosses, brackets or vowel points, and some notes not marked as notes.
 - Medieval poetry and piyyut translated literally or approximately.
